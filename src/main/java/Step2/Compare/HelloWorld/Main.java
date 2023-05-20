@@ -1,4 +1,4 @@
-package Step1.HelloWorld;
+package Step2.Compare.HelloWorld;
 
 public class Main {
     public static void main(String[] args) {

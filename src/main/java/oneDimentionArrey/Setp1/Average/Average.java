@@ -1,32 +1,42 @@
 package oneDimentionArrey.Setp1.Average;
 
 import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.Arrays;
 
 public class Average {
     public static void main(String[] args) throws Exception {
-        BufferedReader br = new BufferedReader(new java.io.InputStreamReader(System.in));
 
-        int numberCount = Integer.parseInt(br.readLine());
-        String arr[] = br.readLine().split(" ");
+    }
 
-        double arrayInt[] = new double[numberCount];
+    public static double getMaxPoint(String[] points) {
+        double[] arrayInt = new double[points.length];
+        double maxPoint = 0;
 
-        double max = 0;
+        for(int i = 0; i < arrayInt.length; i++){
+            arrayInt[i] = Integer.parseInt(points[i]);
+
+            if(arrayInt[i]> maxPoint) {
+                maxPoint = arrayInt[i];
+            }
+        }
+        return maxPoint;
+    }
+
+    public static double getSumPoint(String[] points) throws IOException {
+
+        int numberCount = points.length;
+
+        double max = getMaxPoint(points);
+        double[] arrayInt = new double[numberCount];
         double sum = 0;
 
         for(int i = 0; i < numberCount; i++){
-            arrayInt[i] = Integer.parseInt(arr[i]);
-
-            if(arrayInt[i]> max) {
-                max=arrayInt[i];
-            }
-        }
-
-        for(int i = 0; i < numberCount; i++){
+            arrayInt[i] = Integer.parseInt(points[i]);
             sum += arrayInt[i] / max * 100;
         }
-
         System.out.println(sum / numberCount);
+        return sum;
     }
 }

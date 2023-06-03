@@ -12,14 +12,52 @@ public class Stack {
     public static void main(String[] args) throws IOException {
 
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder stringBuilder = new StringBuilder(); // 출력할 결과물 저장
+        StringBuilder stringBuilder = new StringBuilder();
 
-        // BufferedReader  는 물자열 한줄로 읽으니까 공백을 기준으로 문자열을 분리해주기 위해 사용함.
+
         StringTokenizer stringTokenizer;
-        // 명령의 수 체크하기
         int OrderNumber = Integer.parseInt(bufferedReader.readLine());
-
         stack = new int[OrderNumber];
 
+        while (OrderNumber--> 0) {
+            stringTokenizer = new StringTokenizer(bufferedReader.readLine(), " ");
+            switch (stringTokenizer.nextToken()) {
+                case "push":
+                    stack[size++] = Integer.parseInt(stringTokenizer.nextToken());
+                    break;
+                case "pop":
+                    if(size == 0) {
+                        stringBuilder.append("-1").append('\n');
+                    } else {
+                        stringBuilder.append(stack[size - 1]).append('\n');
+                        size--;
+                    }
+                    break;
+                case "size":
+                    stringBuilder.append(size).append('\n');
+                    break;
+                case "empty":
+                    if(size == 0) {
+                        stringBuilder.append("1").append('\n');
+                    } else {
+                        stringBuilder.append("0").append('\n');
+                    }
+                    break;
+                case "top":
+                    if(size == 0) {
+                        stringBuilder.append("-1").append('\n');
+                    } else {
+                        stringBuilder.append(stack[size - 1]).append('\n');
+                    }
+                    break;
+            }
+        }
+        System.out.println(stringBuilder);
+        }
+
+
+
+
+
     }
-}
+

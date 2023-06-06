@@ -6,7 +6,7 @@ import java.io.InputStreamReader;
 import java.io.OutputStreamWriter;
 import java.util.StringTokenizer;
 
-public class Bukkit {
+public class Bukket {
     public static void main (String[] args) throws Exception {
         BufferedReader bufferReader = new BufferedReader((new InputStreamReader(System.in)));
         BufferedWriter bufferWriter = new BufferedWriter((new OutputStreamWriter(System.out)));
@@ -17,11 +17,11 @@ public class Bukkit {
         int m = Integer.parseInt(st.nextToken());
         int a, b;
 
-        // n 에 대한 배열 생성
-        int[] arr = new int[n];
-        for(int i = 0; i < n; i++) {
-            sb.append(i);
-        }
+//        // n 에 대한 배열 생성
+//        int[] arr = new int[n];
+//        for(int i = 0; i < n; i++) {
+//            sb.append(i);
+//        }
 
 //        for(int i = 0; i < m; i++) {
 //            st = new StringTokenizer(bufferReader.readLine());
@@ -47,5 +47,5 @@ public class Bukkit {
 //        bufferWriter.close();
 //        bufferReader.close();
 //
-//    }
+    }
 }

@@ -1,4 +1,4 @@
-package oneDimentionArrey.Setp1.Average;
+package Step4.Average;
 
 import java.io.BufferedReader;
 import java.io.IOException;

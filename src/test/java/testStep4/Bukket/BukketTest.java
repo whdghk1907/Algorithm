@@ -1,4 +1,4 @@
-package testStep1.Multiplication;
+package testStep4.Bukket;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;

@@ -1,6 +1,6 @@
-package testOneDimentionArray.Step1.Average;
+package testStep4.Average;
 
-import oneDimentionArrey.Setp1.Average.Average;
+import Step4.Average.Average;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

@@ -1,9 +1,8 @@
-package stack.Step1;
+package Step19.Stack;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.Scanner;
 import java.util.StringTokenizer;
 
 public class Stack {

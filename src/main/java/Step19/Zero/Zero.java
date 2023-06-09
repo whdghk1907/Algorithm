@@ -9,34 +9,42 @@ public class Zero {
 
     public static void main(String[] args) throws IOException {
         BufferedReader bufferedReader = new BufferedReader(new InputStreamReader(System.in));
-        StringBuilder stringBuilder = new StringBuilder();
+        int orderNumber = Integer.parseInt(bufferedReader.readLine());
 
-        int OrderNumber = Integer.parseInt(bufferedReader.readLine());
+        int[] stack = new int[orderNumber];
+        int sum = 0;
 
-        int[] stack = new int[OrderNumber];
-        int allSum = 0;
-        while (OrderNumber--> 0) {
+        /**/
+        int index = 0;
+        while (orderNumber-- > 0) {
             StringTokenizer stringTokenizer = new StringTokenizer(bufferedReader.readLine(), " ");
             int number = Integer.parseInt(stringTokenizer.nextToken());
-            if(number == 0) {
-                //stack[--OrderNumber] = 0;
-                stack[OrderNumber - 1] = 0;
+
+            if (number == 0) {
+                stack[index - 1] = 0;
+                index--;
             } else {
-                stack[OrderNumber] = number;
-
+                stack[index] = number;
+                index++;
             }
-            System.out.println(stack[OrderNumber]);
+
+            /**
+             * index를 안쓰고 orderNumber 를 그대로 사용하시니까 Index -1 out of bounds for length 오류가 나오겠죠?? ^^
+             */
+
+/*
+            if (number == 0) {
+                stack[orderNumber - 1] = 0;
+            } else {
+                stack[orderNumber] = number;
+            }
+*/
         }
-        for(int i = 0; i < stack.length; i++) {
-            allSum += stack[i];
+
+        for (int i = 0; i < stack.length; i++) {
+            sum += stack[i];
         }
 
-        System.out.println("정답은 : "+allSum);
-
-
-
-
-
-
+        System.out.println(sum);
     }
 }

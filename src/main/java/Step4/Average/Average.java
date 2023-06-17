@@ -40,3 +40,4 @@ public class Average {
         return sum;
     }
 }
+

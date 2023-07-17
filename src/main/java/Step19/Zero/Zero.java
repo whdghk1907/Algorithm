@@ -28,17 +28,6 @@ public class Zero {
                 index++;
             }
 
-            /**
-             * index를 안쓰고 orderNumber 를 그대로 사용하시니까 Index -1 out of bounds for length 오류가 나오겠죠?? ^^
-             */
-
-/*
-            if (number == 0) {
-                stack[orderNumber - 1] = 0;
-            } else {
-                stack[orderNumber] = number;
-            }
-*/
         }
 
         for (int i = 0; i < stack.length; i++) {

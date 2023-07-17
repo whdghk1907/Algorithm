@@ -21,7 +21,7 @@ public class MaxValue {
 
         for(int i = 0; i < 9; ++i) {
             for(int j = 0; j < 9; ++j) {
-                if(matrix[i][j] > maxValue) {
+                if(matrix[i][j] >= maxValue) {
                     maxValue = matrix[i][j];
                     maxRow = i + 1;
                     maxColumn = j + 1;
@@ -30,7 +30,7 @@ public class MaxValue {
         }
 
         System.out.println(maxValue);
-        System.out.println((maxRow) + " " + (maxColumn));
+        System.out.println(maxRow + " " + maxColumn);
 
     }
 }

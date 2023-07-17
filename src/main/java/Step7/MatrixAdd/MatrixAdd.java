@@ -20,8 +20,7 @@ public class MatrixAdd {
                 matrix2[i][j] = scanner.nextInt();
             }
         }
-        // String 쓰니까 메모리 부족으로 오답됨. StringBuilder 사용해야함.
-        //String matrixValue = "";
+
         StringBuilder matrixValue = new StringBuilder();
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {

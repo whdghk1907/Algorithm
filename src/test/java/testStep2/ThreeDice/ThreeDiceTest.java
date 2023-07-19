@@ -13,7 +13,6 @@ public class ThreeDiceTest {
     void setUp() {
         threeDice = new ThreeDice();
     }
-
     @Test
     void threeGoalsTest() {
         //given
@@ -44,13 +43,27 @@ public class ThreeDiceTest {
     void noGoalsTest() {
         //given
         int diceValue1 = 3;
-        int diceValue2 = 3;
-        int diceValue3 = 6;
+        int diceValue2 = 2;
+        int diceValue3 = 4;
 
         //when
-//        int result = threeDice.noGoals(diceValue1, diceValue2, diceValue3);
+        int result = threeDice.noGoals(diceValue1, diceValue2, diceValue3);
 
         //then
-//        assertEquals(400, result);
+        assertEquals(400, result);
+    }
+
+    @Test
+    void getScore() {
+        //given
+        int diceValue1 = 2;
+        int diceValue2 = 2;
+        int diceValue3 = 2;
+
+        //when
+        int score = threeDice.getScore(diceValue1, diceValue2, diceValue3);
+
+        //then
+        assertEquals(12000, score);
     }
 }

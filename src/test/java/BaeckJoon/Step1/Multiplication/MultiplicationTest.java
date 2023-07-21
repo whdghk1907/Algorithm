@@ -1,9 +1,9 @@
-package BaeckJoon.testStep1.Multiplication;
+package BaeckJoon.Step1.Multiplication;
 
+import BaeckJoon.Step1.Multiplication.Multiplication;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
-import BaeckJoon.Step1.Multiplication.Multiplication;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
 import static org.junit.jupiter.api.Assertions.assertEquals;

@@ -1,6 +1,5 @@
-package BaeckJoon.testStep2.Oven;
+package BaeckJoon.Step2.Oven;
 
-import BaeckJoon.Step2.Oven.Oven;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

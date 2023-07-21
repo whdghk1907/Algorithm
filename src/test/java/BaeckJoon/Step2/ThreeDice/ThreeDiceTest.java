@@ -1,6 +1,5 @@
-package BaeckJoon.testStep2.ThreeDice;
+package BaeckJoon.Step2.ThreeDice;
 
-import BaeckJoon.Step2.ThreeDice.ThreeDice;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

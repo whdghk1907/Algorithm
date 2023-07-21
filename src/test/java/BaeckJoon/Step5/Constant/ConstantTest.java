@@ -1,4 +1,4 @@
-package BaeckJoon.testStep5.Constant;
+package BaeckJoon.Step5.Constant;
 
 import BaeckJoon.Step5.Constant.Constant;
 import org.junit.jupiter.api.BeforeEach;

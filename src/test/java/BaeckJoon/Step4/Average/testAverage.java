@@ -1,6 +1,5 @@
-package BaeckJoon.testStep4.Average;
+package BaeckJoon.Step4.Average;
 
-import BaeckJoon.Step4.Average.Average;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 

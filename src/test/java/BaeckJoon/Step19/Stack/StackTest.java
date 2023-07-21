@@ -1,4 +1,4 @@
-package BaeckJoon.testStep19.Stack;
+package BaeckJoon.Step19.Stack;
 
 import BaeckJoon.Step19.Stack.Stack;
 import org.junit.jupiter.api.BeforeEach;

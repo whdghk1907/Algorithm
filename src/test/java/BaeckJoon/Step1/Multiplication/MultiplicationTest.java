@@ -16,7 +16,6 @@ public class MultiplicationTest {
     };
 
     @Test
-    @DisplayName("dfasdfasdf")
     void multiply() {
         // given
         int toMultiple = 123;

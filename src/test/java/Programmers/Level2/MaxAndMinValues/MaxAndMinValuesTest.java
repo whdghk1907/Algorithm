@@ -1,4 +1,4 @@
-package Programmers.Leve2.MaxAndMinValues;
+package Programmers.Level2.MaxAndMinValues;
 
 import Programmers.Level2.MaxMinValues.MaxAndMinValues;
 import org.junit.jupiter.api.BeforeEach;

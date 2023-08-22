@@ -3,8 +3,7 @@ package Programmers.Level2.JadenCase;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertFalse;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JadenCaseTest {
 
@@ -16,26 +15,14 @@ public class JadenCaseTest {
     }
 
     @Test
-    void testToJaden() {
+    void toJadenTest() {
         //given
-        String givenWord = "unFollowed";
+        String givenWord = "f3o3r 3th3e lAs3t WeEk";
 
         //when
-        String result = jadenCase.toJadenSingle(givenWord);
-
-        //then
-        assertEquals("Unfollowed", result);
-    }
-
-    @Test
-    void testToJadenMultiple() {
-        //given
-        String givenWord = "for the last week";
-
-        //when
-        String result = jadenCase.JadenCase(givenWord);
+        String result = jadenCase.toJaden(givenWord);
 
         //result
-        assertEquals("For The Last Week ", result);
+        assertEquals("F3o3r 3th3e Las3t Week", result);
     }
 }

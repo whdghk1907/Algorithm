@@ -16,14 +16,15 @@ public class MinimumValuesTest {
     }
 
     @Test
-    public void decreasingArray() {
+    public void minimun(){
         //given
-        int[] arr = new int[]{9,3,1};
+        int[] A = {4,1,2};
+        int[] B = {4,5,4};
 
         //when
-        int[] result =  minimumValues.descendingArray(arr);
+        int result = minimumValues.minimun(A, B);
 
         //then
-        assertArrayEquals(new int[]{1,3,9} , result);
+        assertEquals(29, result);
     }
 }
